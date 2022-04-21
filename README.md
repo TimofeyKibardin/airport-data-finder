@@ -2,5 +2,6 @@
 Airport console search application.
 
 Start application with:
-java -jar target/airport_data_project-1.0-jar-with-dependencies.jar <optional column number>
+java -jar target/airport_data_project-1.0-jar-with-dependencies.jar "optional column number"
+
 via cmd console from project root folder
