@@ -16,7 +16,16 @@ public class DataSorting {
      */
     public static void sortInputDataByColumn(ArrayList<List<String>> listOfRows, int columnNumber) {
 
-        listOfRows.sort(Comparator.comparing(l -> l.get(columnNumber)));
+        if (columnNumber == 1 || columnNumber == 2) {
+            listOfRows.sort(Comparator.comparing(l -> l.get(1)));
+        }
+        else if (columnNumber == 3){
+            listOfRows.sort(Comparator.comparing(l -> l.get(2)));
+        }
+        else {
+            listOfRows.sort(Comparator.comparing(l -> l.get(columnNumber)));
+        }
+
     }
 
 
